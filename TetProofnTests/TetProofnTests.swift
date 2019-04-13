@@ -43,9 +43,18 @@ class TetProofnTests: XCTestCase {
     }
     
     func testBiggerIsGreater() {
-        XCTAssertEqual(TestProofn.minimumDeletion(listNumber: [3,3,2,1,3]),2)
-        XCTAssertEqual(TestProofn.minimumDeletion(listNumber: [1,3,3,1,2,3,3,3]),3)
-        XCTAssertEqual(TestProofn.minimumDeletion(listNumber: [4,2,1,1,1,3,3,3]),5)
+        XCTAssertEqual(TestProofn.biggerIsGreater(str: "ab"),"ba")
+        XCTAssertEqual(TestProofn.biggerIsGreater(str: "bb"),"no answer")
+        XCTAssertEqual(TestProofn.biggerIsGreater(str: "hefg"),"hegf")
+        XCTAssertEqual(TestProofn.biggerIsGreater(str: "dhck"),"dhkc")
+        XCTAssertEqual(TestProofn.biggerIsGreater(str: "dkhc"),"hcdk")
+        XCTAssertEqual(TestProofn.biggerIsGreater(str: "aazz"),"azaz")
+    }
+    
+    func testReverseString(){
+        XCTAssertEqual(TestProofn.reverseStringRecursion(str: "abc"),"cba")
+        XCTAssertEqual(TestProofn.reverseStringRecursion(str: "good"),"doog")
+        XCTAssertEqual(TestProofn.reverseStringRecursion(str: "percobaan"),"naabocrep")
     }
 //    func testPerformanceExample() {
 //        // This is an example of a performance test case.

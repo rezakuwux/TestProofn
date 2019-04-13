@@ -13,12 +13,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var string = "hefg"
-        let originStr = string
-        repeat{  // Must start at lowest permutation
-            print(string)
-        } while (TestProofn.biggerIsGreater(string: &string, originStr: originStr));
-        // Do any additional setup after loading the view, typically from a nib.
+//        var string = "hefg"
+//        let originStr = string
+//        var biggerGreater = ""
+//        repeat{  // Must start at lowest permutation
+//            if biggerGreater == "" && string != originStr{
+//                biggerGreater = string
+//            }
+//            else if string > originStr && biggerGreater > string{
+//                biggerGreater = string
+//            }
+//        } while (TestProofn.biggerIsGreater(string: &string, originStr: originStr));
+//        // Do any additional setup after loading the view, typically from a nib.
+//        print(biggerGreater)
     }
     
 

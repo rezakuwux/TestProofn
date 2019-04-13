@@ -53,8 +53,21 @@ public class TestProofn {
         }
         return listNumber.count - maxVal
     }
-    
-    public static func biggerIsGreater( string: inout String, originStr: String) -> Bool{
+    public static func biggerIsGreater(str:String) -> String{
+        var string = str
+        let originStr = string
+        var biggerGreater = ""
+        repeat{  // Must start at lowest permutation
+            if biggerGreater == "" && string != originStr{
+                biggerGreater = string
+            }
+            else if string > originStr && biggerGreater > string{
+                biggerGreater = string
+            }
+        } while (TestProofn.permutation(string: &string, originStr: originStr))
+        return biggerGreater == "" ? "no answer" : biggerGreater
+    }
+    public static func permutation( string: inout String, originStr: String) -> Bool{
         var array = string.map { String($0) }
         var i = array.count - 1;
         while i > 0 && array[i - 1] >= array[i] {
@@ -87,4 +100,21 @@ public class TestProofn {
         
         return true;
     }
+    
+    public static func reverseStringRecursion(str: NSString) -> String{
+        
+        let count = str.length;
+        
+        if count <= 1 {
+            return str as String
+        }
+        else
+        {
+            let lastChar = str.substring(with: NSMakeRange(count-1, 1))
+            let remainStr = str.substring(to: count - 1)
+            let resultStr = reverseStringRecursion(str: remainStr as NSString)
+            return lastChar + resultStr
+        }
+    }
+    
 }

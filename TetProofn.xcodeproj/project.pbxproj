@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F55366AE22623CAC00274A92 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55366AD22623CAB00274A92 /* StringExtension.swift */; };
 		F557E397225EF0D7008F5969 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557E396225EF0D7008F5969 /* AppDelegate.swift */; };
 		F557E399225EF0D7008F5969 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557E398225EF0D7008F5969 /* ViewController.swift */; };
 		F557E39C225EF0D7008F5969 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F557E39A225EF0D7008F5969 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F55366AD22623CAB00274A92 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		F557E393225EF0D7008F5969 /* TetProofn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TetProofn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F557E396225EF0D7008F5969 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F557E398225EF0D7008F5969 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				F557E396225EF0D7008F5969 /* AppDelegate.swift */,
 				F557E398225EF0D7008F5969 /* ViewController.swift */,
+				F55366AD22623CAB00274A92 /* StringExtension.swift */,
 				F557E3B6225EF10D008F5969 /* TestProofn.swift */,
 				F557E39A225EF0D7008F5969 /* Main.storyboard */,
 				F557E39D225EF0D9008F5969 /* Assets.xcassets */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F55366AE22623CAC00274A92 /* StringExtension.swift in Sources */,
 				F557E399225EF0D7008F5969 /* ViewController.swift in Sources */,
 				F557E397225EF0D7008F5969 /* AppDelegate.swift in Sources */,
 				F557E3B7225EF10D008F5969 /* TestProofn.swift in Sources */,
